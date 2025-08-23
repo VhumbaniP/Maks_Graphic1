@@ -1,16 +1,15 @@
 
     :root{
-     /* New Red Scheme */
-            --bg: #1a0b0b; /* dark red-black */
-            --bg-2: #2d0f0f; /* deeper red-black */
-            --card: #250e0e; /* red card background */
-            --text: #ffe6e6; /* pale red-white */
-            --muted: #d1a8a8; /* muted red-gray */
-            --brand: #dd0208; /* main red brand color */
-            --accent: #ff3a3a; /* bright red accent */
-            --ok: #31c48d; /* keeping green for success states */
-            --shadow: 0 10px 30px rgba(221, 2, 8, 0.15); /* red-tinted shadow */
-            --radius: 18px;
+     --bg: #1a0b0b; /* dark red-black */
+--bg-2: #2d0f0f; /* deeper red-black */
+--card: #250e0e; /* red card background */
+--text: #ffe6e6; /* pale red-white */
+--muted: #d1a8a8; /* muted red-gray */
+--brand: #dd0208; /* main red brand color */
+--accent: #ff3a3a; /* bright red accent */
+--ok: #31c48d; /* keeping green for success */
+--shadow: 0 10px 30px rgba(221, 2, 8, 0.15); /* red-tinted shadow */
+--radius: 18px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
