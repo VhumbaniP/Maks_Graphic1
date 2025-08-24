@@ -18,5 +18,13 @@
 
     // Footer dynamic year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu");
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+
   
 
