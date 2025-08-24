@@ -236,38 +236,44 @@ footer{
   .hero{grid-template-columns:1fr;}
   .contact-wrap{grid-template-columns:1fr}
 }
-/* Hide toggle button on desktop */
-.menu-toggle {
+/* Hide hamburger on desktop */
+.hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
+  color: var(--text);
   background: none;
   border: none;
-  color: var(--text);
   cursor: pointer;
 }
 
-/* Desktop: keep as row */
+/* Desktop: keep .menu visible */
 .menu {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
 }
 
-/* Mobile dropdown */
-@media (max-width: 768px) {
-  .menu-toggle {
+/* Mobile styles */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg-2);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin: 0 16px 12px;
+  box-shadow: var(--shadow);
+}
+
+/* On small screens */
+@media (max-width: 820px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
     display: block;
   }
-  .menu {
-    display: none; /* hidden by default */
-    flex-direction: column;
-    gap: 12px;
-    background: var(--bg-2);
-    padding: 16px;
-    border-radius: 12px;
-    margin-top: 12px;
-  }
-  .menu.show {
-    display: flex; /* show when toggled */
+  .mobile-menu.show {
+    display: flex;
   }
 }
