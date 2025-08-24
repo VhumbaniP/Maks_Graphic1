@@ -255,7 +255,7 @@ footer{
 
 /* Mobile styles */
 .mobile-menu {
-  display: none;
+  display: block;
   flex-direction: column;
   gap: 12px;
   background: var(--bg-2);
