@@ -277,9 +277,10 @@ footer{
     display: block;
   }
   .mobile-menu.show {
-    display: flex;
+    display: align-items;
   }
 }
+
 .about-section {
   background: var(--bg-2);
   padding: 60px 20px;
