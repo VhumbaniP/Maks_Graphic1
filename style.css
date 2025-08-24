@@ -236,3 +236,38 @@ footer{
   .hero{grid-template-columns:1fr;}
   .contact-wrap{grid-template-columns:1fr}
 }
+/* Hide toggle button on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Desktop: keep as row */
+.menu {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Mobile dropdown */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    gap: 12px;
+    background: var(--bg-2);
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 12px;
+  }
+  .menu.show {
+    display: flex; /* show when toggled */
+  }
+}
