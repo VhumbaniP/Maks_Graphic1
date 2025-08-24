@@ -277,3 +277,48 @@ footer{
     display: flex;
   }
 }
+.about-section {
+  background: var(--bg-2);
+  padding: 60px 20px;
+}
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-heading {
+  font-size: 2.4rem;
+  color: var(--brand);
+  margin-bottom: 16px;
+}
+.about-text {
+  font-size: 1.1rem;
+  color: var(--text);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid rgba(221,2,8,0.25);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(221,2,8,0.3);
+}
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.card p {
+  color: var(--muted);
+}
+
