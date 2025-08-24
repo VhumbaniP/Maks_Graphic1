@@ -132,7 +132,7 @@ section{max-width:1200px;margin:80px auto;padding:0 20px}
 }
 .work img {
   width: 100%;
-  height: 280px;          /* bigger & consistent height */
+  height: 200px;          /* bigger & consistent height */
   object-fit: cover;      /* avoids stretching */
   display: block;
 }
