@@ -123,7 +123,7 @@ section{max-width:1200px;margin:80px auto;padding:0 20px}
 .card h3{margin:0 0 6px;font-size:1.05rem}
 
 /* Portfolio */
-.portfolio{grid-template-columns:repeat(auto-fit,minmax(320px, 1fr)))}
+.portfolio{grid-template-columns:repeat(auto-fit,minmax(300px, 1fr)))}
 .work{
   position:relative;
   border-radius:16px;
