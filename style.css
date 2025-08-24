@@ -253,6 +253,29 @@ footer{
   align-items: center;
 }
 
+/* Responsive */
+@media (max-width: 920px){
+  .hero{grid-template-columns:1fr;}
+  .contact-wrap{grid-template-columns:1fr}
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: var(--text);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Desktop: keep .menu visible */
+.menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 /* Mobile styles */
 .mobile-menu {
   display: none;
@@ -264,8 +287,9 @@ footer{
   margin: 0 16px 12px;
   box-shadow: var(--shadow);
 }
+
 .mobile-menu.show {
-  display: block;
+  display: flex; /* Changed from 'block' to 'flex' to match flex-direction: column */
 }
 
 /* On small screens */
@@ -273,14 +297,16 @@ footer{
   .menu {
     display: none;
   }
+  
   .hamburger {
     display: block;
   }
+  
   .mobile-menu.show {
-    display: align-items;
+    display: flex; /* Fixed: was 'display: align-items;' which is invalid */
+    flex-direction: column;
   }
 }
-
 /* About nav */
 .about-section {
   background: var(--bg-2);
