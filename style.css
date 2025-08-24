@@ -345,3 +345,56 @@ footer{
   color: var(--muted);
 }
 
+/* Navigation video background styles */
+.nav {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Optional: Add overlay for better text readability */
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay - adjust opacity as needed */
+  z-index: -1;
+}
+
+/* Ensure nav content is above video */
+.nav .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* Enhance text visibility over video */
+.nav .brand,
+.nav .link,
+.nav .cta,
+.nav .hamburger {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.nav .mark {
+  color: var(--brand, #fff);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile menu positioning */
+.mobile-menu {
+  position: relative;
+  z-index: 1001;
+}
