@@ -16,14 +16,13 @@
       return false;
     }
 
-    // Footer dynamic year
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Mobile nav toggle
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-  const menuToggle = document.querySelector(".menu-toggle");
-  const menu = document.querySelector(".menu");
-  menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("show");
-  });
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+});
 
 
   
