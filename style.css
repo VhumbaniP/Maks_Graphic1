@@ -236,28 +236,6 @@ footer{
   .hero{grid-template-columns:1fr;}
   .contact-wrap{grid-template-columns:1fr}
 }
-/* Hide hamburger on desktop */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  color: var(--text);
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Desktop: keep .menu visible */
-.menu {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-/* Responsive */
-@media (max-width: 920px){
-  .hero{grid-template-columns:1fr;}
-  .contact-wrap{grid-template-columns:1fr}
-}
 
 /* Hide hamburger on desktop */
 .hamburger {
@@ -289,7 +267,21 @@ footer{
 }
 
 .mobile-menu.show {
-  display: flex; /* Changed from 'block' to 'flex' to match flex-direction: column */
+  display: flex;
+}
+
+/* Style links in mobile menu */
+.mobile-menu .link,
+.mobile-menu .cta {
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: calc(var(--radius) / 2);
+  transition: background-color 0.2s ease;
+}
+
+.mobile-menu .link:hover,
+.mobile-menu .cta:hover {
+  background: var(--bg-3, rgba(255,255,255,0.1));
 }
 
 /* On small screens */
